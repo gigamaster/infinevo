@@ -15,11 +15,14 @@ Set of technologies used to build a desktop, mobile and web application.
 
 Just like cooking, and  daily life flexibility, in general, the flexibility of programming languages refers to the unexpectedly many ways in which utterings in the language can be used. The flexibility in the design of a program, and technology, is offered through source code — modifying a program's source code adapts the program's design.
 
+[![Education.org](https://img.shields.io/badge/free-education-green?style=for-the-badge&logo=apache)](https://github.com/gigamaster/infinevo/)    
+
+
 
       — | Open Source |—
       : : Server - Database - Source Code - Graphic Illustration - Programming tools and Open Source projects
 
-[![Education.org](https://img.shields.io/badge/free-education-green?style=for-the-badge&logo=apache)](https://github.com/gigamaster/infinevo/)    
+
   
   
 ### Server  
@@ -58,14 +61,14 @@ Just like cooking, and  daily life flexibility, in general, the flexibility of p
 [![unreal Engine](http://img.shields.io/badge/-Unreal--Engine-272727?style=flat-square&logo=unrealengine&logoColor=%23ffffff&labelColor=313131)](https://www.unrealengine.com/) 
  
 
-### Graphic Editor and Illustration
+### Graphic Editor and illustration
 
 [![GIMP](http://img.shields.io/badge/-GIMP-272727?style=flat-square&logo=gimp&logoColor=%23ffffff&labelColor=5C5543)](https://gimp.org/) 
 [![Inkscape](http://img.shields.io/badge/-Inkscape-3C78A9?style=flat-square&logo=inkscape&logoColor=%23ffffff&labelColor=000000)](https://inkscape.org/)
 [![KRITA](http://img.shields.io/badge/-Krita-3C78A9?style=flat-square&logo=krita&logoColor=%23ffffff&labelColor=3BABFF)](https://krita.org/)
 
   
-### Programming languages, and Open Source Projects
+### Programming languages, tools and Open Source Projects
 
 [![Apache Netbeans](http://img.shields.io/badge/-Apache--Netbeans-272727?style=flat-square&logo=apachenetbeanside&logoColor=ffffff&labelColor=1B6AC6)](https://netbeans.org/)
 [![Chocolatey](http://img.shields.io/badge/-Chocolatey-272727?style=flat-square&logo=chocolatey&logoColor=ffffff&labelColor=80B5E3)](https://chocolatey.org/) 
