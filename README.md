@@ -1,10 +1,10 @@
+# : : *Infin*evo
+[![Project Status: WIP – User Interface in progress.](https://www.repostatus.org/badges/latest/wip.svg)](https://github.com/gigamaster/infinevo/) [![Project Status: Active – The project is being actively developed.](https://www.repostatus.org/badges/2.0.0/active.svg)](https://github.com/gigamaster/infinevo/) [![License](https://poser.pugx.org/phpunit/phpunit/license)](https://github.com/xoopscube/xcl/blob/master/BSD_license.txt)  
+
 ## /////////////////////////// — Nuno Luciano [ @gigamaster ]
 
 >Earth is my homeland, humanity is my family!   
 — Front end developer, UIX designer, project manager, adult educator with over 20 years of Open Source experience
-
-### : : *Infin*evo
-[![Project Status: WIP – User Interface in progress.](https://www.repostatus.org/badges/latest/wip.svg)](https://github.com/gigamaster/infinevo/) [![Project Status: Active – The project is being actively developed.](https://www.repostatus.org/badges/2.0.0/active.svg)](https://github.com/gigamaster/infinevo/) [![License](https://poser.pugx.org/phpunit/phpunit/license)](https://github.com/xoopscube/xcl/blob/master/BSD_license.txt)  
 
 Evolution of Technology — Past, Present, and Future — Graphical User Interface
 
