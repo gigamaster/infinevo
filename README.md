@@ -1,4 +1,4 @@
-# /////////////////////////// — Nuno Luciano [ @gigamaster ]
+## /////////////////////////// — Nuno Luciano [ @gigamaster ]
 
 >Earth is my homeland, humanity is my family!   
 — Front end developer, UIX designer, project manager, adult educator with over 20 years of Open Source experience
@@ -8,7 +8,7 @@
 
 Evolution of Technology — Past, Present, and Future — Graphical User Interface
 
-# /////////////////////////// — Tech Stack  
+## /////////////////////////// — Tech Stack  
 
 Set of technologies used to build a desktop, mobile and web application.  
 **The magic of creative spark** is a mixed spicy combination of imagination and the flexibility of programming languages, frameworks, libraries, patterns, servers, UI/UX solutions, software, and tools.
