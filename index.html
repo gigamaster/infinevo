@@ -27,6 +27,11 @@
       subMaxLevel: 2,
       auto2top: true,
 
+      // Redirect all sidebar requests to the root sidebar
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+
       tabs: {
         persist: true,      
         sync: true,         
