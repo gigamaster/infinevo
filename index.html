@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
-  <script src="https://cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/docsify-edit-on-github@1.0.1/index.js"></script>
+
   <style>
     :root {
-      /* Customizations for docsify-themeable */
       --theme-color: #42b983;
     }
   </style>
@@ -20,14 +21,12 @@
   <script>
     window.$docsify = {
       name: 'Gigamaster - Infinevo',
-      repo: 'gigamaster/infinevo', // github
+      repo: 'gigamaster/infinevo',
       
-      // General Settings
       loadSidebar: true,
       subMaxLevel: 2,
       auto2top: true,
 
-      // 2. Tabs Plugin Config
       tabs: {
         persist: true,      
         sync: true,         
@@ -36,7 +35,6 @@
         tabHeadings: true   
       },
 
-      // 3. Pagination Plugin Config
       pagination: {
         previousText: 'Previous',
         nextText: 'Next',
@@ -44,27 +42,30 @@
         crossChapterText: true,
       },
 
-      // 4. Edit on GitHub Plugin Config
+      // Check if plugin exists before calling to prevent ReferenceError
       plugins: [
-        EditOnGithubPlugin.create(
-          'https://github.com/gigamaster/infinevo/blob/master/', // The raw view link
-          'https://github.com/gigamaster/infinevo/edit/master/', // The edit link
-          '📝 Edit on GitHub'                                  // Button text
-        )
+        function(hook, vm) {
+          if (typeof EditOnGithubPlugin !== 'undefined') {
+            // Note: Edit before changing branch rom 'master' to 'main'
+            var editButton = EditOnGithubPlugin.create(
+              'https://github.com/gigamaster/infinevo/blob/master/', 
+              'https://github.com/gigamaster/infinevo/edit/master/', 
+              '📝 Edit on GitHub'
+            );
+            hook.afterEach(function(html) {
+              return editButton(html);
+            });
+          }
+        }
       ]
     }
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
-  
   <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
@@ -76,6 +77,5 @@
       navigator.serviceWorker.register('sw.js')
     }
   </script>
-  
 </body>
 </html>
