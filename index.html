@@ -44,19 +44,12 @@
 
       // Check if plugin exists before calling to prevent ReferenceError
       plugins: [
-        function(hook, vm) {
-          if (typeof EditOnGithubPlugin !== 'undefined') {
-            // Note: Edit before changing branch rom 'master' to 'main'
-            var editButton = EditOnGithubPlugin.create(
-              'https://github.com/gigamaster/infinevo/blob/master/', 
-              'https://github.com/gigamaster/infinevo/edit/master/', 
-              '📝 Edit on GitHub'
-            );
-            hook.afterEach(function(html) {
-              return editButton(html);
-            });
-          }
-        }
+        // This is the correct way to call the EditOnGithubPlugin
+        EditOnGithubPlugin.create(
+          'https://github.com/gigamaster/infinevo/blob/main/', // Branch view
+          'https://github.com/gigamaster/infinevo/edit/main/', // Branch edit
+          '📝 Edit on GitHub'
+        )
       ]
     }
   </script>
