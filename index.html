@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gigamaster - Infinevo</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+  
+  <style>
+    :root {
+      /* Customizations for docsify-themeable */
+      --theme-color: #42b983;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'Gigamaster - Infinevo',
+      repo: 'gigamaster/infinevo', // github
+      
+      // General Settings
+      loadSidebar: true,
+      subMaxLevel: 2,
+      auto2top: true,
+
+      // 2. Tabs Plugin Config
+      tabs: {
+        persist: true,      
+        sync: true,         
+        theme: 'classic',   
+        tabComments: true,  
+        tabHeadings: true   
+      },
+
+      // 3. Pagination Plugin Config
+      pagination: {
+        previousText: 'Previous',
+        nextText: 'Next',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+
+      // 4. Edit on GitHub Plugin Config
+      plugins: [
+        EditOnGithubPlugin.create(
+          'https://github.com/gigamaster/infinevo/blob/master/',
+          null,
+          'Edit on GitHub'
+        )
+      ]
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/docsify-tabs@1"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-javascript.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
+
+  <script>
+    if (typeof navigator.serviceWorker !== 'undefined') {
+      navigator.serviceWorker.register('sw.js')
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
+</body>
+</html>
